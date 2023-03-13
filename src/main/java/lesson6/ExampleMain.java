@@ -20,9 +20,10 @@ public class ExampleMain {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory =
                 new SqlSessionFactoryBuilder().build(inputStream);
-        try (SqlSession session = sqlSessionFactory.openSession()) {
-            CategoriesMapper mapper = session.getMapper(CategoriesMapper.class);
-            Categories cat = mapper.selectByPrimaryKey(1L);
+//        try (SqlSession session = sqlSessionFactory.openSession()) {
+//            CategoriesMapper mapper = session.getMapper(CategoriesMapper.class);
+//            CategoriesExample cat = new CategoriesExample();
+//            cat.createCriteria().andIdEqualTo(1L);
         }
 
 
@@ -53,4 +54,4 @@ public class ExampleMain {
 ////        SqlSession session = sqlSessionFactory.openSession();
 ////        return session.getMapper(CategoriesMapper.class);
 ////    }
-}
+//}
