@@ -34,7 +34,7 @@ public class ProductsTest {
 
         assertThat(response.isSuccessful(), CoreMatchers.is(true));
         assertThat(response.body().getId(), equalTo(1));
-        assertThat(response.body().getTitle(), equalTo("Milk"));
+        assertThat(response.body().getTitle(), equalTo("Bread"));
     }
 
     @Test
